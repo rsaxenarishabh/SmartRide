@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_left_arrow"
+                android:backgroundTint="@color/white"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Ride Detail"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_gravity="center"
+            android:gravity="end"
+
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgGoogle"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_google_map"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                >
+            </ImageView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/closedTrips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rect_bg_lightgrey"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Closed trips"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone"></TextView>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ic_right"
+                    android:backgroundTint="@color/white"></ImageView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height=".1dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rectan_bg"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="3dp"
+                    android:text="5.0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"></TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/ic_favourites"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center|top"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_circlegreen"
+                        android:backgroundTint="#228B22"></ImageView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_dotted_barline"
+                        android:backgroundTint="@color/hintColor"></ImageView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_circle"></ImageView>
+                </LinearLayout>    <!--Dotted liness-->
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="top"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtstartRide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ciculrstd"
+                            android:gravity="center|left"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_sDistrict"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ciculrstd"
+                            android:gravity="center|left"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="5dp"
+                            android:textColor="@color/grey"
+                            android:textSize="13sp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtCompleteRide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ciculrstd"
+                            android:gravity="center|left"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_dDistrict"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/ciculrstd"
+                            android:gravity="center|left"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="5dp"
+                            android:textColor="@color/grey"
+                            android:textSize="13sp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>   <!--middle layer data city names-->
+
+                <View
+                    android:layout_width=".5dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@color/lightGrey"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ic_car"
+                            android:backgroundTint="@color/grey"></ImageView>
+
+                        <TextView
+                            android:id="@+id/txt_vehicleName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/ciculrstd"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13sp"></TextView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/lightGrey"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/vehicleInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/ciculrstd"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="32 ft mxl"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/ridetime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/ciculrstd"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"></TextView>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/lightGrey"></View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/ic_package"
+                            android:backgroundTint="@color/grey"></ImageView>
+
+                        <TextView
+                            android:id="@+id/goodsInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:fontFamily="@font/ciculrstd"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13sp"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_margin="5dp"
+            android:background="@color/lightGrey"></View>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/edit_txt_background"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="left|center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="7dp"
+                    android:text="Start Job"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:visibility="gone"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="left|center"
+                    android:paddingRight="5dp"
+                    android:text="Kilometre"
+                    android:textColor="@color/grey"
+                    android:textSize="13sp"
+                    android:visibility="gone"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginLeft="10dp"
+                android:gravity="end|center">
+
+                <TextView
+                    android:id="@+id/ridedistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/ciculrstd"
+
+                    android:gravity="left|center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="left|center"
+                    android:padding="5dp"
+                    android:text="Rs."
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/ridefare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="left|center"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Optional Pickup Location"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/spinner_adapter_shape"
+                    >
+                </TextView>
+                <ImageView
+
+                    android:id="@+id/imgPickupGoogle"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_google_map"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtOptionPickup"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="2dp"
+                >
+            </TextView>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+     android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optional Drop Location"
+        android:textColor="@color/colorPrimary"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/spinner_adapter_shape"
+        >
+    </TextView>
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/imgDropGoogle"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_google_map"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        >
+    </ImageView>
+</LinearLayout>
+
+            <TextView
+                android:id="@+id/txtOptionalDrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="2dp"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Optional Mobile Location"
+                android:textColor="@color/colorPrimary"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/spinner_adapter_shape"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/txtOptionalMobile"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:padding="2dp"
+                >
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStartRide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/start_ride_shape"
+            android:text="Start Ride"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnCompleteRide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/start_ride_shape"
+            android:text="Complete Ride"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+    </LinearLayout>
+
+</LinearLayout>

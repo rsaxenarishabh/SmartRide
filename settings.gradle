@@ -1,0 +1,3 @@
+include ':otpview'
+include ':app'
+rootProject.name='SmartRide'

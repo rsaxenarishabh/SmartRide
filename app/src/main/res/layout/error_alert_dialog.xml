@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/spinner_adapter_shape"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtSmart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:visibility="gone"
+        android:fontFamily="@font/ciculrstd"
+        android:padding="5dp"
+        android:text="SmartRide"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+       ></TextView>
+
+    <TextView
+        android:id="@+id/txtError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/ciculrstd"
+        android:padding="5dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"></TextView>
+
+    <TextView
+        android:id="@+id/txtOK"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_gravity="center|end"
+        android:layout_margin="10dp"
+        android:background="@drawable/spinner_adapter_shape"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/ciculrstd"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:textSize="14sp"></TextView>
+
+</LinearLayout>

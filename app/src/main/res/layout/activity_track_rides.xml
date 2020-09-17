@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:background="@color/white"
+    tools:context=".Activity.RiderSide.TrackRides">
+
+    <LinearLayout
+        android:id="@+id/ghj"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/backTD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_left_arrow"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:textStyle="bold"
+            android:text="Track Details"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/ciculrstd"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/ghj">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ciculrstd"
+                android:gravity="center|left"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:text="Driver Name :"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/driverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ciculrstd"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="Suresh Verma"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="center|left"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:text="Mobile Number :"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/driverMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ciculrstd"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="9638527410"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="center|left"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:text="Vehicle Number :"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/driverVehicleNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ciculrstd"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="UP149875"></TextView>
+                </LinearLayout>
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_caarr"
+                    android:padding="5dp"
+                    android:layout_gravity="center|left"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ciculrstd"
+                        android:gravity="center|left"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:text="Vehicle No:"></TextView>
+
+
+                        <TextView
+                            android:id="@+id/driverVehicleNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ciculrstd"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorPrimary"
+                            ></TextView>
+            </LinearLayout>
+        </LinearLayout>
+            <View
+                android:layout_width=".5dp"
+                android:layout_height="match_parent"
+                android:background="@color/lightGrey"
+                android:layout_margin="2dp"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Drive With-"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/ciculrstd"></TextView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/lightGrey"
+                    android:layout_margin="1dp"></View>
+                <TextView
+                    android:id="@+id/driverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/ciculrstd"></TextView>
+
+                <TextView
+                    android:id="@+id/driverMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/ciculrstd"
+                    android:drawableRight="@drawable/ic_call"
+                    android:drawableTint="@color/colorPrimaryDark"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

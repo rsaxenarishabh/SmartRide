@@ -1,0 +1,1641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.SignUp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loginbgg"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="center"
+                    android:text="Register with us as"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="normal"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radiogrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioRider"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="true"
+                        android:fontFamily="@font/ciculrstd"
+                        android:text="Customer"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:checked="true"
+                        android:fontFamily="@font/ciculrstd"
+                        android:text="Driver"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp"></RadioButton>
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_driverHeadinig"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:padding="3dp"
+                                android:text="Driver Details-"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal"></TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:padding="3dp"
+                                android:text="Full Name"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/rect_bg_lightgrey"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/ic_businessman"
+                                    android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                <EditText
+                                    android:id="@+id/etFullname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:digits="QWERTYUIOPASDFGHJKLZXCVBNM q wertyuiopasdfghjklzxcvbnm"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="center|left"
+                                    android:hint="Enter your Full Name"
+                                    android:inputType="textCapWords"
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary"
+                                    android:textSize="15sp"></EditText>
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:padding="3dp"
+                                android:text="Phone Number"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/rect_bg_lightgrey"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/ic_smartphone"
+                                    android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                <EditText
+                                    android:id="@+id/ePhone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:digits="1234567890"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="center|left"
+                                    android:hint="Enter your Phone Number"
+                                    android:inputType="phone"
+                                    android:maxLength="10"
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary"
+                                    android:textSize="15sp"></EditText>
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/txtVerifyMobile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="15dp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:gravity="end"
+                                android:padding="3dp"
+                                android:text="Verify Mobile"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                android:visibility="gone"></TextView>
+
+                            <!--
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/rect_bg_lightgrey">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_gravity="left|center"
+                                    android:backgroundTint="@color/colorPrimaryDark"
+                                    android:background="@drawable/ic_email"></ImageView>
+                                <EditText
+                                    android:id="@+id/etEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:inputType="textEmailAddress"
+                                    android:digits="QWERTYUIOPASDFGHJKLZXCVBNMq1234567890@.wertyuiopasdfghjklzxcvbnm"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="5dp"
+                                    android:hint="Enter your Email Id"
+                                    android:textColorHint="@color/hintColor"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:gravity="center|left"
+                                    android:background="@android:color/transparent"></EditText>
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:text="Date of Birth"
+                                android:textSize="14sp"
+                                android:padding="3dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:fontFamily="@font/ciculrstd"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/rect_bg_lightgrey">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_gravity="left|center"
+                                    android:backgroundTint="@color/colorPrimaryDark"
+                                    android:background="@drawable/ic_date"></ImageView>
+                                <TextView
+                                    android:id="@+id/txtDOB"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="5dp"
+                                    android:hint="Select your Date of Birth"
+                                    android:textColorHint="@color/hintColor"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:gravity="center|left"
+                                    android:background="@android:color/transparent"></TextView>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:text="Gender"
+                                android:textSize="14sp"
+                                android:padding="3dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:fontFamily="@font/ciculrstd"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/rect_bg_lightgrey">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_gravity="left|center"
+                                    android:backgroundTint="@color/colorPrimaryDark"
+                                    android:background="@drawable/ic_gender"></ImageView>
+                                <EditText
+                                    android:id="@+id/eGender"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:inputType="textCapWords"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="5dp"
+                                    android:hint="Enter your Gender"
+                                    android:textColorHint="@color/hintColor"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:gravity="center|left"
+                                    android:background="@android:color/transparent"></EditText>
+
+                            </LinearLayout>-->
+                            <LinearLayout
+                                android:id="@+id/riderInfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="GST Number"
+                                    android:textColorHint="@color/colorPrimary"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_customer"></ImageView>
+
+
+
+                                    <EditText
+                                        android:visibility="visible"
+                                        android:id="@+id/eRgst"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter GST No. (Optional)"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Location"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_driving_license"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+<!--                                    <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView-->
+<!--                                        android:id="@+id/autocompleteAddressCustomer"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="40dp"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:background="@null"-->
+<!--                                        android:hint="Enter Address (Locality, Area)"-->
+<!--android:visibility="gone"-->
+<!--                                        android:textColor="@color/colorPrimary"-->
+<!--                                        android:textColorHint="@color/colorPrimary"-->
+<!--                                        android:textSize="15sp"-->
+<!--                                        app:pacv_adapterClass="com.smartrider24.TestPlacesAutocompleteAdapter"-->
+<!--                                        app:pacv_clearEnabled="true"-->
+<!--                                        app:pacv_googleMapsApiKey="@string/google_maps_api_key"-->
+<!--                                        app:pacv_languageCode="en"-->
+<!--                                        app:pacv_resultType="establishment" />-->
+                                    <EditText
+                                        android:visibility="visible"
+                                        android:id="@+id/eRlocation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter your Location"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/driveInfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+                                <!-- -->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Aadhar Card"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_customer"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eAdaahar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter your Aadhar details"
+                                        android:inputType="number"
+                                        android:maxLength="12"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/uploadDriverAadhaar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="end"
+                                    android:padding="3dp"
+                                    android:text="Upload Aadhaar Card"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="13sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Driving Licence"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_driving_license"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eDrivingLicnc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+
+                                        android:gravity="center|left"
+                                        android:hint="Enter your Driving Licence"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/uploadLicence"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="end"
+                                    android:padding="3dp"
+                                    android:text="Upload Licence"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="13sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Driving Experience"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_driving_license"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/etDexpericne"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:digits="1234567890"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter your experience"
+                                        android:inputType="number"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+
+                                <!--..................................................................................................-->
+                                <!-- <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:text="Residential Address"
+                                    android:textSize="14sp"
+                                    android:padding="3dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:fontFamily="@font/ciculrstd"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_gravity="left|center"
+                                        android:backgroundTint="@color/colorPrimaryDark"
+                                        android:background="@drawable/ic_home_address"></ImageView>
+                                    <EditText
+                                        android:id="@+id/eResidentialAddress"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:inputType="textCapWords"
+                                        android:layout_marginLeft="5dp"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:padding="5dp"
+                                        android:singleLine="true"
+                                        android:hint="Enter Address (Area, City, State)"
+                                        android:textColorHint="@color/hintColor"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        android:gravity="center|left"
+                                        android:background="@android:color/transparent"></EditText>
+
+                                </LinearLayout>-->
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Address"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_home_address"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+<!--                                    <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView-->
+<!--                                        android:id="@+id/autocompleteAddressDriver"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="40dp"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:background="@null"-->
+<!--                                        android:visibility="gone"-->
+<!--                                        android:layout_marginLeft="5dp"-->
+<!--                                        android:hint="Enter Address (Area)"-->
+<!--                                        android:textColor="@color/colorPrimary"-->
+<!--                                        android:textColorHint="@color/colorPrimary"-->
+<!--                                        android:textSize="15sp"-->
+<!--                                        app:pacv_adapterClass="com.smartrider24.TestPlacesAutocompleteAdapter"-->
+<!--                                        app:pacv_clearEnabled="true"-->
+<!--                                        app:pacv_googleMapsApiKey="@string/google_maps_api_key"-->
+<!--                                        app:pacv_languageCode="en"-->
+<!--                                        app:pacv_resultType="establishment" />-->
+
+                                    <EditText
+                                        android:id="@+id/eCurrentAddress"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter Address (Locality, Area)"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"
+                                        android:visibility="visible"
+                                        android:layout_marginStart="5dp"></EditText>
+
+                                </LinearLayout>
+                            </LinearLayout>  <!-- Driver  info-->
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:padding="3dp"
+                                android:text="City"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/rect_bg_lightgrey"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/ic_city"
+                                    android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                <EditText
+                                    android:id="@+id/eCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="center|left"
+                                    android:hint="Enter your City"
+                                    android:inputType="textCapWords"
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary"
+                                    android:textSize="15sp"></EditText>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:padding="3dp"
+                                android:text="State"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/rect_bg_lightgrey"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/ic_architecture"
+                                    android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                <EditText
+                                    android:id="@+id/eState"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="center|left"
+                                    android:hint="Enter your State"
+                                    android:inputType="textCapWords"
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary"
+                                    android:textSize="15sp"></EditText>
+
+                            </LinearLayout>
+                            <!--....................................................................-->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:padding="3dp"
+                                android:text="Referral Code "
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/rect_bg_lightgrey"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/ic_password"
+                                    android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                <EditText
+                                    android:id="@+id/eReferralCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="center|left"
+                                    android:hint="Enter Referral Code (Optional)"
+                                    android:inputType="textCapWords"
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary"
+                                    android:textSize="15sp"></EditText>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="15dp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:padding="3dp"
+                                android:text="Password"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="14sp"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/rect_bg_lightgrey"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/ic_password"
+                                    android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                <EditText
+                                    android:id="@+id/ePasswrd"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="center|left"
+                                    android:hint="Enter Password"
+                                    android:padding="5dp"
+                                    android:password="true"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary"
+                                    android:textSize="15sp"></EditText>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ownersDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Owner's Details-"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="normal"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Full Name"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_businessman"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eOwnerName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter Owner's Name"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Phone Number"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_smartphone"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eownerPhone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter Phone Number"
+                                        android:inputType="phone"
+                                        android:maxLength="10"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Email Address"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_email"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eOwnerEmail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:digits="QWERTYUIOPASDFGHJKLZXCVBNMq1234567890@.wertyuiopasdfghjklzxcvbnm"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter your Email Id (Optional)"
+                                        android:inputType="textEmailAddress"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Pan Card"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_file"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/ePAN"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter your Pan Card (Optional)"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/uploadDriverPAN"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="end"
+                                    android:padding="3dp"
+                                    android:text="Upload PAN Card"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="13sp"
+                                    android:visibility="gone"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Aadhaar Card"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_customer"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eOwnerAdhaar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter Owner's Aadhaar detail"
+                                        android:inputType="number"
+                                        android:maxLength="12"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/uploadOwnerAadhaar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="end"
+                                    android:padding="3dp"
+                                    android:text="Upload Aadhaar Card"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="13sp"></TextView>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Registration Certificate (RC)"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_car"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eRC"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter RC detail"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/uploadRC"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="end"
+                                    android:padding="3dp"
+                                    android:text="Upload RC"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="13sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Vehicle Insurance"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_insurance"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eInsurance"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter Insurance Detail"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/uploadInsurance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:gravity="end"
+                                    android:padding="3dp"
+                                    android:text="Upload Vehicle Insurance"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="13sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="-3dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="KYC Details"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_customer"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eKYC"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter KYC detail"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/hintColor"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Residential Address"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_home_address"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+<!--                                    <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView-->
+<!--                                        android:id="@+id/autocompleteAddressEowner"-->
+<!--                                        android:layout_width="match_parent"-->
+<!--                                        android:layout_height="40dp"-->
+<!--                                        android:layout_marginLeft="5dp"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:background="@null"-->
+<!--                                        android:visibility="gone"-->
+<!--                                        android:hint="Enter Address (Locality, Area)"-->
+<!--                                        android:textColor="@color/colorPrimary"-->
+<!--                                        android:textColorHint="@color/colorPrimary"-->
+<!--                                        android:textSize="15sp"-->
+<!--                                        app:pacv_adapterClass="com.smartrider24.TestPlacesAutocompleteAdapter"-->
+<!--                                        app:pacv_clearEnabled="true"-->
+<!--                                        app:pacv_googleMapsApiKey="@string/google_maps_api_key"-->
+<!--                                        app:pacv_languageCode="en"-->
+<!--                                        app:pacv_resultType="establishment" />-->
+
+
+                                    <EditText
+                                        android:id="@+id/eOwnerAddress"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter Address (Area, City, State)"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"
+                                        android:visibility="visible"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="City"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_city"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eOwnerCity"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter your City"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="State"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_architecture"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eOwnerState"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter your State"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:fontFamily="@font/ciculrstd"
+                                    android:padding="3dp"
+                                    android:text="Referal Code"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="14sp"></TextView>
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/rect_bg_lightgrey"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|center"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_architecture"
+                                        android:backgroundTint="@color/colorPrimaryDark"></ImageView>
+
+                                    <EditText
+                                        android:id="@+id/eReferal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@android:color/transparent"
+                                        android:enabled="false"
+                                        android:fontFamily="@font/ciculrstd"
+                                        android:gravity="center|left"
+                                        android:hint="Enter your Referal code"
+                                        android:inputType="textCapWords"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textColorHint="@color/colorPrimary"
+                                        android:textSize="15sp"></EditText>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btn_SignUp"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="25dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/rect_bg_lightgrey"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:fontFamily="@font/ciculrstd"
+                                android:text="Sign Up"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="normal"></Button>
+
+                            <TextView
+                                android:id="@+id/btn_Login"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="25dp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:gravity="center"
+                                android:padding="3dp"
+                                android:text="Already registered? Please Log In"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="13sp"></TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

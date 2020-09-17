@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f4f87</color>
+    <color name="colorPrimaryDark">#3f4f87</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="lightGrey">#DCDCDC</color>
+    <color name="grey">#808080</color>
+    <color name="hintColor">#a9a9a9</color>
+    <color name="hintColor1">#9EA9A9A9</color>
+    <color name="green">#228B22</color>
+    <color name="bank_statement_red">#20F9462E</color>
+    <color name="Red">#F7F43636</color></resources>

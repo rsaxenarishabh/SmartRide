@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+  >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:padding="16dp"
+        android:text="@string/verification_code"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_code_subtext"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal" />
+
+
+    <EditText
+        android:id="@+id/edtOtp"
+        android:layout_marginTop="25dp"
+        android:hint="         Enter OTP"
+        android:background="@drawable/edit_txt_background"
+        android:textColorHint="@color/white"
+        android:layout_width="150dp"
+
+        android:inputType="number"
+        android:layout_height="40dp">
+
+    </EditText>
+    <com.mukesh.OtpView
+        android:visibility="gone"
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        android:itemBackground="@drawable/bg_otp_item"
+        android:textColor="@android:color/white"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemSpacing="6dp"
+        app:lineColor="@color/otp_item_state"
+        app:state_filled="true"
+        app:viewType="line">
+
+    </com.mukesh.OtpView>
+
+    <TextView
+        android:id="@+id/validate_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Done"
+      android:background="@drawable/edit_txt_background"
+        android:textColor="@android:color/white" />
+</LinearLayout>

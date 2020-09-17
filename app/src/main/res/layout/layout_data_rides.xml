@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/spinner_adapter_shape">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@color/lightGrey">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:background="@drawable/rectan_bg">
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="5.0"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="3dp"></TextView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_favourites"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"></ImageView>
+            </LinearLayout>
+        </LinearLayout>   <!--Hide,NO need here-->
+        <LinearLayout
+            android:id="@+id/linearConfirmPending"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center|left"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/ciculrstd"
+                android:textSize="13sp"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"></TextView>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/CallDriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Call Driver"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ciculrstd"
+                    android:textSize="14sp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rect_bg_lightgrey"
+                    android:backgroundTint="@color/green"></TextView>
+            <TextView
+
+                android:id="@+id/tracking"
+                android:layout_weight="0"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Track journey"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ciculrstd"
+                android:textSize="14sp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rect_bg_lightgrey"
+                android:backgroundTint="#b22222"></TextView>
+</LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/lightGrey"
+            android:layout_margin="5dp"></View>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="top"
+                    android:gravity="center|top"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_circlegreen"
+                        android:backgroundTint="#228B22"></ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_dotted_barline"
+                        android:backgroundTint="@color/hintColor"></ImageView>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ic_circle"></ImageView>
+                </LinearLayout>    <!--Dotted liness-->
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_sName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:gravity="center|left"
+                            android:textSize="11sp"
+                            android:textColor="@color/colorPrimary"
+                            android:fontFamily="@font/ciculrstd"></TextView>
+                        <TextView
+                            android:id="@+id/txt_sDistrict"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:gravity="center|left"
+                            android:textSize="12sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/ciculrstd"></TextView></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_dName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:gravity="center|left"
+                            android:textSize="11sp"
+                            android:textColor="@color/colorPrimary"
+                            android:fontFamily="@font/ciculrstd"></TextView>
+                        <TextView
+                            android:id="@+id/txt_dDistrict"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center|left"
+                            android:textSize="12sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/ciculrstd"></TextView></LinearLayout>
+                </LinearLayout>   <!--middle layer data city names-->
+
+                <View
+                    android:layout_width=".5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightGrey"
+                    android:layout_margin="5dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ic_car"
+                            android:backgroundTint="@color/grey"></ImageView>
+
+                        <TextView
+                            android:id="@+id/txt_vehicleName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ciculrstd"
+                            android:gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp"
+                            android:textAllCaps="true"></TextView>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@color/lightGrey"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:gravity="left|center"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/ciculrstd"
+                            android:textColor="@color/colorPrimary"></TextView>
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="1dp"
+                            android:gravity="left|center"
+                            android:paddingRight="5dp"
+                            android:text="Kilometre"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/ciculrstd"
+                            android:textColor="@color/grey"></TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:gravity="left|center"
+                                android:padding="5dp"
+                                android:text="Rs."
+                                android:textSize="15sp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary"></TextView>
+                            <TextView
+                                android:id="@+id/totalCharge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="left|center"
+                                android:paddingRight="5dp"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/ciculrstd"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:background="@color/lightGrey"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"></View>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_package"
+                            android:backgroundTint="@color/grey"></ImageView>
+
+                        <TextView
+                            android:id="@+id/goodsInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ciculrstd"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:padding="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:text="Packaged / Consumer"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/lightGrey"
+            android:layout_margin="5dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center|left">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

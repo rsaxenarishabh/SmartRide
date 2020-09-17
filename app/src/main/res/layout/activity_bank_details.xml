@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:background="@color/white"
+    tools:context=".Activity.DriverSide.KYC_Details.BankDetails">
+
+
+    <LinearLayout
+        android:id="@+id/tabb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backbank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_left_arrow"
+            android:backgroundTint="@color/white"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="RC Details"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Bank Name"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/ciculrstd"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rect_bg_lightgrey">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/ciculrstd"
+            android:padding="5dp"
+            android:hint="Enter Bank Name"
+            android:text="ICICI Bank"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center|left"
+            android:background="@android:color/transparent"></TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Bank Branch"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/ciculrstd"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rect_bg_lightgrey">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/ciculrstd"
+            android:padding="5dp"
+            android:hint="Enter Bank Branch"
+            android:text="Delhi"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center|left"
+            android:background="@android:color/transparent"></TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Account Number"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/ciculrstd"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rect_bg_lightgrey">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="phone"
+            android:fontFamily="@font/ciculrstd"
+            android:padding="5dp"
+            android:hint="Enter Account Number"
+            android:text="9876-1234-5678"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center|left"
+            android:background="@android:color/transparent"></TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="IFSC"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/ciculrstd"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rect_bg_lightgrey">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/ciculrstd"
+            android:padding="5dp"
+            android:hint="Enter IFSC Code"
+            android:text="SGSH4675"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center|left"
+            android:background="@android:color/transparent"></TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Account Holder's Name"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/ciculrstd"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rect_bg_lightgrey">
+
+
+        <TextView
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/ciculrstd"
+            android:padding="5dp"
+            android:hint="Enter Holder's Name"
+            android:text="Arohi Sharma"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center|left"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/tabb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_RC"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            ></ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

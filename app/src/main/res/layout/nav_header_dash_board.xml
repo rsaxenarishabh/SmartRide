@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryDark">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ciculrstd"
+                android:layout_marginLeft="15dp"
+                android:text="Smart Rider24"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center|left"
+                android:textAllCaps="true"></TextView>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/drawerDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/profileData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="center|left"
+
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:drawableRight="@drawable/ic_right"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:layout_marginRight="15dp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/tmob"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/ciculrstd"
+                    android:gravity="center|left"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"></TextView>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/lightGrey"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"></View>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+
+                <LinearLayout
+                    android:id="@+id/Wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_home_sign"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/ciculrstd"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center|left"
+                    android:text="Booking"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/trip"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="Your Trip"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/trackJourney"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_wallet"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="Your Money"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/referEarn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_earning"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="Refer &amp; Earn"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_exit"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="Logout"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>  <!--Driver Drawer-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/riderDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+                <LinearLayout
+                    android:id="@+id/profileDataRider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tRname"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:drawableRight="@drawable/ic_right"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:layout_marginRight="15dp"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/tRmob"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:gravity="center|left"
+
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/lightGrey"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/BookNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_home_sign"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="Book Now"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tripr"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/trip"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="Your Rides"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Walletr"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_wallet"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="Your Money"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/referEarnr"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_earning"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="Refer &amp; Earn"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/logoutr"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_exit"
+                        android:backgroundTint="@color/grey"
+                        android:layout_gravity="left|center"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/ciculrstd"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:text="Logout"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginRight="15dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
